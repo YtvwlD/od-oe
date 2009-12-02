@@ -18,7 +18,6 @@ SRC_URI = "http://sources.dreamboxupdate.com/download/7020/secondstage-${MACHINE
 SECONDSTAGE_UPDATE_SRC = "http://sources.dreamboxupdate.com/download/7020/secondstage-${MACHINE}-${PV}.nfi \
 	http://sources.dreamboxupdate.com/download/7020/writenfi-r1"
 
-SRC_URI_append_dm7025 = " ${SECONDSTAGE_UPDATE_SRC}"
 SRC_URI_append_dm8000 = " ${SECONDSTAGE_UPDATE_SRC}"
 SRC_URI_append_dm800 = " ${SECONDSTAGE_UPDATE_SRC}"
 #SRC_URI_append_dm500hd = " ${SECONDSTAGE_UPDATE_SRC}"
@@ -58,10 +57,6 @@ do_stage_dm500hd() {
 #do_install_dm500hd() {
 #	do_install_dm8000
 #}
-
-do_install_dm7025() {
-	do_install_dm8000
-}
 
 FILES_${PN} = "/tmp"
 PACKAGE_ARCH := "${MACHINE_ARCH}"
