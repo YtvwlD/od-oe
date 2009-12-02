@@ -3,7 +3,7 @@ SECTION = "base"
 PRIORITY = "required"
 MAINTAINER = "Felix Domke <tmbinc@elitdvb.net>"
 PV = "26"
-PR = "r1"
+PR = "r2"
 LICENSE = "GPL"
 
 FILES_${PN} = "/etc/image-version"
