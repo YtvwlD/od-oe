@@ -3,7 +3,6 @@ SECTION = "base"
 PRIORITY = "required"
 LICENSE = "proprietary"
 MAINTAINER = "Felix Domke <tmbinc@elitedvb.net>"
-RDEPENDS_dm7025 = "dreambox-secondstage (>= 76-r0)"
 RDEPENDS_dm8000 = "dreambox-secondstage (>= 74-r0)"
 RDEPENDS_dm800 = "dreambox-secondstage (>= 74-r0)"
 
@@ -16,7 +15,7 @@ def get_modules_extension(bb, d):
 	return ""
 
 KV_dm7025 = "2.6.12.6"
-PV_dm7025 = "${KV}-20091202${@get_modules_extension(bb, d)}"
+PV_dm7025 = "${KV}-20091203${@get_modules_extension(bb, d)}"
 
 KV_dm600pvr = "2.6.12"
 PV_dm600pvr = "${KV}-20090430"
