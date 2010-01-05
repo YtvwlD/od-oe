@@ -3,11 +3,11 @@ MAINTAINER = "Felix Domke <tmbinc@elitedvb.net>"
 
 PACKAGES_DYNAMIC = "enigma2-skin-*"
 
-SRCDATE = "20100104"
+SRCDATE = "20100106"
 
 # if you want the 2.7 release, use
-#TAG = ";tag=enigma2-skins_rel27"
-#PV = "2.7cvs${SRCDATE}"
+TAG = ";tag=enigma2-skins_rel27"
+PV = "2.7cvs${SRCDATE}"
 
 # if you want experimental, use:
 #TAG = ""
