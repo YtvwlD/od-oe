@@ -1,6 +1,6 @@
 require gst-plugins.inc
 DEPENDS += "gst-plugins-base"
-EXTRA_OECONF += "--disable-apexsink --disable-dvdnav"
+EXTRA_OECONF += "--disable-apexsink --disable-dvdnav --disable-cdaudio"
 RCONFLICTS_gst-plugin-mpegdemux = "gst-plugin-fluendo-mpegdemux"
 RREPLACES_gst-plugin-mpegdemux = "gst-plugin-fluendo-mpegdemux"
 SRC_URI += "file://gst-plugins_configure_skip_shave.patch;patch=1;pnum=0 \
