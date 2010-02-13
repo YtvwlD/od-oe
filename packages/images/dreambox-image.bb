@@ -129,7 +129,8 @@ OPENDREAMBOX_COMMON_MACHINE_D_dm800 += "dreambox-tpmd"
 
 OPENDREAMBOX_COMMON_MACHINE_dm500hd += "${OPENDREAMBOX_V3_ONLY} ${OPENDREAMBOX_EXPERIMENTAL} ${MODEM_SUPPORT_E2}"
 OPENDREAMBOX_COMMON_MACHINE_R_dm500hd += "${OPENDREAMBOX_EXPERIMENTAL_R} enigma2-plugin-systemplugins-videomode \
-	enigma2-plugin-extensions-genuinedreambox ${MODEM_SUPPORT_E2_R}"
+	enigma2-plugin-extensions-genuinedreambox ${MODEM_SUPPORT_E2_R} enigma2-plugin-systemplugins-tempfancontrol \
+	enigma2-plugin-extensions-trafficinfo"
 OPENDREAMBOX_COMMON_MACHINE_D_dm500hd += "dreambox-tpmd"
 
 OPENDREAMBOX_COMMON_MACHINE_dm8000 += "${OPENDREAMBOX_V3_ONLY} ${OPENDREAMBOX_EXPERIMENTAL} ${WLAN_SUPPORT} ${WLAN_MADWIFI}"
