@@ -3,7 +3,7 @@ SECTION = "base"
 PRIORITY = "required"
 MAINTAINER = "Felix Domke <tmbinc@elitdvb.net>"
 PV = "27"
-PR = "r0"
+PR_dm500hd = "r1"
 LICENSE = "GPL"
 
 FILES_${PN} = "/etc/image-version"
