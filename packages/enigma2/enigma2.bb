@@ -56,6 +56,7 @@ PN = "enigma2"
 PR = "r0"
 
 SRCDATE = "20100105"
+SRCDATE_dm500hd = "20100127"
 #SRCDATE is NOT used by git to checkout a specific revision
 #but we need it to build a ipk package version
 #when you like to checkout a specific revision of e2 you need
@@ -63,9 +64,9 @@ SRCDATE = "20100105"
 
 # if you want upcoming release, use:
 ####################################################
-#BRANCH = "master"
+BRANCH_dm500hd = "master"
 #PV = "2.8git${SRCDATE}"
-#SRCREV = ""
+SRCREV_dm500hd = "025acea46debca45f8ae004cdb17cc6e5fc84309"
 ####################################################
 
 # if you want experimental use
