@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.12-5.1-brcmstb-dm8000
-# Thu Jan 15 23:32:40 2009
+# Linux kernel version: 2.6.12-5.1-brcmstb-dm500hd
+# Wed Jan 27 17:03:10 2010
 #
 CONFIG_MIPS=y
 
@@ -343,7 +343,6 @@ CONFIG_MTD_NAND=y
 # CONFIG_MTD_NAND_VERIFY_WRITE is not set
 CONFIG_MTD_NAND_IDS=y
 # CONFIG_MTD_NAND_DISKONCHIP is not set
-# CONFIG_MTD_NAND_DM8000 is not set
 # CONFIG_MTD_NAND_NANDSIM is not set
 
 #
@@ -380,7 +379,6 @@ CONFIG_BLK_DEV_LOOP=y
 CONFIG_BLK_DEV_CRYPTOLOOP=m
 CONFIG_BLK_DEV_NBD=m
 # CONFIG_BLK_DEV_SX8 is not set
-# CONFIG_BLK_DEV_UB is not set
 # CONFIG_BLK_DEV_RAM is not set
 CONFIG_BLK_DEV_RAM_COUNT=16
 CONFIG_INITRAMFS_SOURCE=""
@@ -418,7 +416,6 @@ CONFIG_IDEDISK_MULTI_MODE=y
 CONFIG_BLK_DEV_IDECD=y
 # CONFIG_BLK_DEV_IDETAPE is not set
 # CONFIG_BLK_DEV_IDEFLOPPY is not set
-# CONFIG_BLK_DEV_IDESCSI is not set
 # CONFIG_IDE_TASK_IOCTL is not set
 
 #
@@ -463,67 +460,7 @@ CONFIG_IDEDMA_AUTO=y
 #
 # SCSI device support
 #
-CONFIG_SCSI=y
-CONFIG_SCSI_PROC_FS=y
-
-#
-# SCSI support type (disk, tape, CD-ROM)
-#
-CONFIG_BLK_DEV_SD=m
-# CONFIG_CHR_DEV_ST is not set
-# CONFIG_CHR_DEV_OSST is not set
-CONFIG_BLK_DEV_SR=m
-# CONFIG_BLK_DEV_SR_VENDOR is not set
-CONFIG_CHR_DEV_SG=m
-
-#
-# Some SCSI devices (e.g. CD jukebox) support multiple LUNs
-#
-CONFIG_SCSI_MULTI_LUN=y
-# CONFIG_SCSI_CONSTANTS is not set
-# CONFIG_SCSI_LOGGING is not set
-
-#
-# SCSI Transport Attributes
-#
-# CONFIG_SCSI_SPI_ATTRS is not set
-# CONFIG_SCSI_FC_ATTRS is not set
-# CONFIG_SCSI_ISCSI_ATTRS is not set
-
-#
-# SCSI low-level drivers
-#
-# CONFIG_BLK_DEV_3W_XXXX_RAID is not set
-# CONFIG_SCSI_3W_9XXX is not set
-# CONFIG_SCSI_ACARD is not set
-# CONFIG_SCSI_AACRAID is not set
-# CONFIG_SCSI_AIC7XXX is not set
-# CONFIG_SCSI_AIC7XXX_OLD is not set
-# CONFIG_SCSI_AIC79XX is not set
-# CONFIG_SCSI_DPT_I2O is not set
-# CONFIG_MEGARAID_NEWGEN is not set
-# CONFIG_MEGARAID_LEGACY is not set
-# CONFIG_SCSI_SATA is not set
-# CONFIG_SCSI_DMX3191D is not set
-# CONFIG_SCSI_FUTURE_DOMAIN is not set
-# CONFIG_SCSI_IPS is not set
-# CONFIG_SCSI_INITIO is not set
-# CONFIG_SCSI_INIA100 is not set
-# CONFIG_SCSI_SYM53C8XX_2 is not set
-# CONFIG_SCSI_IPR is not set
-# CONFIG_SCSI_QLOGIC_FC is not set
-# CONFIG_SCSI_QLOGIC_1280 is not set
-CONFIG_SCSI_QLA2XXX=y
-# CONFIG_SCSI_QLA21XX is not set
-# CONFIG_SCSI_QLA22XX is not set
-# CONFIG_SCSI_QLA2300 is not set
-# CONFIG_SCSI_QLA2322 is not set
-# CONFIG_SCSI_QLA6312 is not set
-# CONFIG_SCSI_LPFC is not set
-# CONFIG_SCSI_DC395x is not set
-# CONFIG_SCSI_DC390T is not set
-# CONFIG_SCSI_NSP32 is not set
-CONFIG_SCSI_DEBUG=m
+# CONFIG_SCSI is not set
 
 #
 # Multi-device support (RAID and LVM)
@@ -549,7 +486,6 @@ CONFIG_DM_MULTIPATH_EMC=m
 #
 # Fusion MPT device support
 #
-# CONFIG_FUSION is not set
 
 #
 # IEEE 1394 (FireWire) support
@@ -803,12 +739,7 @@ CONFIG_BT_HIDP=m
 #
 # Bluetooth device drivers
 #
-CONFIG_BT_HCIUSB=m
-CONFIG_BT_HCIUSB_SCO=y
 # CONFIG_BT_HCIUART is not set
-CONFIG_BT_HCIBCM203X=m
-CONFIG_BT_HCIBPA10X=m
-CONFIG_BT_HCIBFUSB=m
 # CONFIG_BT_HCIVHCI is not set
 CONFIG_NETDEVICES=y
 CONFIG_NETIF_DMA=y
@@ -901,7 +832,6 @@ CONFIG_PPP_DEFLATE=m
 CONFIG_PPP_BSDCOMP=m
 CONFIG_PPPOE=m
 # CONFIG_SLIP is not set
-# CONFIG_NET_FC is not set
 # CONFIG_SHAPER is not set
 CONFIG_NETCONSOLE=m
 
@@ -1152,14 +1082,6 @@ CONFIG_DVB_CORE=y
 # CONFIG_DVB_BUDGET_AV is not set
 
 #
-# Supported USB Adapters
-#
-# CONFIG_DVB_TTUSB_BUDGET is not set
-# CONFIG_DVB_TTUSB_DEC is not set
-# CONFIG_DVB_DIBUSB is not set
-# CONFIG_DVB_CINERGYT2 is not set
-
-#
 # Supported FlexCopII (B2C2) Adapters
 #
 # CONFIG_DVB_B2C2_FLEXCOP is not set
@@ -1338,11 +1260,6 @@ CONFIG_SND_PCM_OSS=y
 #
 
 #
-# USB devices
-#
-# CONFIG_SND_USB_AUDIO is not set
-
-#
 # Open Sound System
 #
 # CONFIG_SOUND_PRIME is not set
@@ -1352,133 +1269,8 @@ CONFIG_SND_PCM_OSS=y
 #
 CONFIG_USB_ARCH_HAS_HCD=y
 CONFIG_USB_ARCH_HAS_OHCI=y
-CONFIG_USB=y
-CONFIG_USB_DEBUG=y
-
-#
-# Miscellaneous USB options
-#
-CONFIG_USB_DEVICEFS=y
-# CONFIG_USB_BANDWIDTH is not set
-# CONFIG_USB_DYNAMIC_MINORS is not set
-# CONFIG_USB_OTG is not set
-
-#
-# USB Host Controller Drivers
-#
-CONFIG_USB_EHCI_HCD=y
-# CONFIG_USB_EHCI_SPLIT_ISO is not set
-# CONFIG_USB_EHCI_ROOT_HUB_TT is not set
-CONFIG_USB_OHCI_HCD=y
-# CONFIG_USB_OHCI_BIG_ENDIAN is not set
-CONFIG_USB_OHCI_LITTLE_ENDIAN=y
-# CONFIG_USB_UHCI_HCD is not set
-# CONFIG_USB_SL811_HCD is not set
+# CONFIG_USB is not set
 # CONFIG_USB_BRCM is not set
-
-#
-# USB Device Class drivers
-#
-CONFIG_USB_AUDIO=m
-
-#
-# USB Bluetooth TTY can only be used with disabled Bluetooth subsystem
-#
-CONFIG_USB_MIDI=m
-CONFIG_USB_ACM=m
-CONFIG_USB_PRINTER=m
-
-#
-# NOTE: USB_STORAGE enables SCSI, and 'SCSI disk support' may also be needed; see USB_STORAGE Help for more information
-#
-CONFIG_USB_STORAGE=y
-# CONFIG_USB_STORAGE_DEBUG is not set
-CONFIG_USB_STORAGE_DATAFAB=y
-CONFIG_USB_STORAGE_FREECOM=y
-CONFIG_USB_STORAGE_ISD200=y
-CONFIG_USB_STORAGE_DPCM=y
-CONFIG_USB_STORAGE_USBAT=y
-CONFIG_USB_STORAGE_SDDR09=y
-CONFIG_USB_STORAGE_SDDR55=y
-CONFIG_USB_STORAGE_JUMPSHOT=y
-
-#
-# USB Input Devices
-#
-CONFIG_USB_HID=m
-CONFIG_USB_HIDINPUT=y
-# CONFIG_HID_FF is not set
-# CONFIG_USB_HIDDEV is not set
-
-#
-# USB HID Boot Protocol drivers
-#
-# CONFIG_USB_KBD is not set
-# CONFIG_USB_MOUSE is not set
-CONFIG_USB_AIPTEK=m
-CONFIG_USB_WACOM=m
-CONFIG_USB_KBTAB=m
-CONFIG_USB_POWERMATE=m
-CONFIG_USB_MTOUCH=m
-CONFIG_USB_EGALAX=m
-CONFIG_USB_XPAD=m
-CONFIG_USB_ATI_REMOTE=m
-
-#
-# USB Imaging devices
-#
-CONFIG_USB_MDC800=m
-CONFIG_USB_MICROTEK=m
-
-#
-# USB Multimedia devices
-#
-CONFIG_USB_DABUSB=m
-
-#
-# Video4Linux support is needed for USB Multimedia device support
-#
-
-#
-# USB Network Adapters
-#
-# CONFIG_USB_CATC is not set
-# CONFIG_USB_KAWETH is not set
-# CONFIG_USB_PEGASUS is not set
-# CONFIG_USB_RTL8150 is not set
-# CONFIG_USB_USBNET is not set
-# CONFIG_USB_ZD1201 is not set
-CONFIG_USB_MON=m
-
-#
-# USB port drivers
-#
-
-#
-# USB Serial Converter support
-#
-# CONFIG_USB_SERIAL is not set
-
-#
-# USB Miscellaneous drivers
-#
-CONFIG_USB_EMI62=m
-CONFIG_USB_EMI26=m
-CONFIG_USB_AUERSWALD=m
-CONFIG_USB_RIO500=m
-CONFIG_USB_LEGOTOWER=m
-CONFIG_USB_LCD=m
-CONFIG_USB_LED=m
-CONFIG_USB_CYTHERM=m
-CONFIG_USB_PHIDGETKIT=m
-CONFIG_USB_PHIDGETSERVO=m
-CONFIG_USB_IDMOUSE=m
-CONFIG_USB_SISUSBVGA=m
-# CONFIG_USB_TEST is not set
-
-#
-# USB ATM/DSL drivers
-#
 
 #
 # USB Gadget Support
@@ -1498,7 +1290,7 @@ CONFIG_USB_SISUSBVGA=m
 #
 # File systems
 #
-CONFIG_EXT2_FS=m
+CONFIG_EXT2_FS=y
 # CONFIG_EXT2_FS_XATTR is not set
 CONFIG_EXT3_FS=y
 CONFIG_EXT3_FS_XATTR=y
@@ -1527,7 +1319,7 @@ CONFIG_MINIX_FS=m
 # CONFIG_ROMFS_FS is not set
 # CONFIG_QUOTA is not set
 CONFIG_DNOTIFY=y
-CONFIG_AUTOFS_FS=m
+# CONFIG_AUTOFS_FS is not set
 CONFIG_AUTOFS4_FS=y
 
 #
@@ -1536,7 +1328,7 @@ CONFIG_AUTOFS4_FS=y
 CONFIG_ISO9660_FS=y
 CONFIG_JOLIET=y
 # CONFIG_ZISOFS is not set
-CONFIG_UDF_FS=m
+CONFIG_UDF_FS=y
 CONFIG_UDF_NLS=y
 CONFIG_CDFS_FS=y
 
@@ -1588,7 +1380,7 @@ CONFIG_JFFS2_ZLIB=y
 CONFIG_JFFS2_RTIME=y
 # CONFIG_JFFS2_RUBIN is not set
 CONFIG_CRAMFS=m
-CONFIG_SQUASHFS=y
+CONFIG_SQUASHFS=m
 # CONFIG_SQUASHFS_EMBEDDED is not set
 CONFIG_SQUASHFS_FRAGMENT_CACHE_SIZE=3
 # CONFIG_SQUASHFS_VMALLOC is not set
