@@ -34,4 +34,7 @@ EXTRA_OECONF_BASE = " --enable-libssp \
 		      --disable-bootstrap --disable-libgomp \
 		      --disable-libmudflap"
 
+EXTRA_OECONF_INITIAL = "--disable-libmudflap --disable-libgomp --disable-libssp --enable-decimal-float=no"
+EXTRA_OECONF_INTERMEDIATE = "--disable-libmudflap --disable-libgomp --disable-libssp"
+
 EXTRA_OECONF_append_linux-uclibc = " ${@base_contains('TARGET_ARCH', 'powerpc', '--disable-decimal-float --without-long-double-128', '',d)}"
