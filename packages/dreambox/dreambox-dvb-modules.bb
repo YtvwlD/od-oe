@@ -34,10 +34,11 @@ PV_dm8000 = "${KV}-20100414"
 
 RDEPENDS = "kernel (${KV})"
 PR = "r0"
+PR_dm8000 = "r1"
 
 SRC_URI = "http://sources.dreamboxupdate.com/snapshots/dreambox-dvb-modules-${MACHINE}-${PV}.tar.bz2 "
 SRC_URI_append_dm7025 = "http://sources.dreamboxupdate.com/download/7020/fpupgrade-${MACHINE}-v7"
-SRC_URI_append_dm8000 = "http://sources.dreamboxupdate.com/download/7020/fpupgrade-${MACHINE}-v5"
+SRC_URI_append_dm8000 = "http://sources.dreamboxupdate.com/download/7020/fpupgrade-${MACHINE}-v7"
 
 S = "${WORKDIR}"
 
@@ -71,7 +72,7 @@ do_install_dm7025() {
 do_install_dm8000() {
 	do_install_dm800
 	install -d ${D}${sbindir}
-	install -m 0755 ${WORKDIR}/fpupgrade-${MACHINE}-v5 ${D}${sbindir}/fpupgrade
+	install -m 0755 ${WORKDIR}/fpupgrade-${MACHINE}-v7 ${D}${sbindir}/fpupgrade
 }
 
 PACKAGE_ARCH := "${MACHINE_ARCH}"
