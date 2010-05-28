@@ -24,17 +24,16 @@ KV_dm500plus = "2.6.12"
 PV_dm500plus = "${KV}-20080822"
 
 KV_dm800 = "2.6.12-5.1-brcmstb-dm800"
-PV_dm800 = "${KV}-20100414"
+PV_dm800 = "${KV}-20100528"
 
 KV_dm500hd = "2.6.12-5.1-brcmstb-dm500hd"
-PV_dm500hd = "${KV}-20100414"
+PV_dm500hd = "${KV}-20100528"
 
 KV_dm8000 = "2.6.12-5.1-brcmstb-dm8000"
-PV_dm8000 = "${KV}-20100414"
+PV_dm8000 = "${KV}-20100528"
 
 RDEPENDS = "kernel (${KV})"
 PR = "r0"
-PR_dm8000 = "r1"
 
 SRC_URI = "http://sources.dreamboxupdate.com/snapshots/dreambox-dvb-modules-${MACHINE}-${PV}.tar.bz2 "
 SRC_URI_append_dm7025 = "http://sources.dreamboxupdate.com/download/7020/fpupgrade-${MACHINE}-v7"
