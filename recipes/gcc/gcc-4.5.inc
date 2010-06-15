@@ -10,7 +10,7 @@ NATIVEDEPS = "mpfr-native gmp-native libmpc-native"
 
 INC_PR = "r1"
 
-SRCREV = "160043"
+SRCREV = "160764"
 PV = "4.5"
 BINV = "${PV}.1"
 BRANCH = "gcc-4_5-branch"
