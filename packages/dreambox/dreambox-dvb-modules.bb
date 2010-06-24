@@ -5,6 +5,7 @@ LICENSE = "proprietary"
 MAINTAINER = "Felix Domke <tmbinc@elitedvb.net>"
 RDEPENDS_dm8000 = "dreambox-secondstage (>= 74-r0)"
 RDEPENDS_dm800 = "dreambox-secondstage (>= 74-r0)"
+RDEPENDS_dm500hd = "dreambox-secondstage (>= 74-r0)"
 
 KV_dm7020 = "2.6.9"
 PV_dm7020 = "${KV}-20060622"
