@@ -3,9 +3,9 @@ MAINTAINER = "Felix Domke <tmbinc@elitedvb.net>"
 
 PACKAGES_DYNAMIC = "enigma2-plugin-*"
 
-SRCDATE = "20100402"
+SRCDATE = "20100625"
 
-# if you want the 2.8.0 release, use
+# if you want the 2.8.3 release, use
 TAG = ";tag=enigma2-plugins_rel28"
 PV = "2.8cvs${SRCDATE}"
 
