@@ -7,8 +7,7 @@ SRC_URI = "http://www.openssl.org/source/openssl-${PV}.tar.gz"
 S = "${WORKDIR}/openssl-${PV}"
 
 AR_append = " r"
-CFLAG = "${@base_conditional('SITEINFO_ENDIANESS', 'le', '-DL_ENDIAN', '-DB_ENDIAN', d)} \
-	-DTERMIO ${FULL_OPTIMIZATION} -Wall"
+CFLAG = "-DTERMIO ${FULL_OPTIMIZATION} -Wall"
 
 # -02 does not work on mipsel: ssh hangs when it tries to read /dev/urandom
 CFLAG_mtx-1 := "${@'${CFLAG}'.replace('-O2', '')}"
@@ -30,6 +29,16 @@ do_configure () {
 	perl perlpath.pl ${bindir}
 	cd ..
 	ln -sf apps/openssl.pod crypto/crypto.pod ssl/ssl.pod doc/
+
+	# endianness fun.. whee
+	. ${CONFIG_SITE}
+	if [ "x$ac_cv_c_bigendian" = "xyes" -o "x$ac_cv_c_littleendian" = "xno" ]; then
+		CFLAG="${CFLAG} -DB_ENDIAN"
+	elif [ "x$ac_cv_c_littleendian" = "xyes" -o "x$ac_cv_c_bigendian" = "xno" ]; then
+		CFLAG="${CFLAG} -DL_ENDIAN"
+	else
+		oefatal do_configure cannot determine endianess
+	fi
 
 	os=${HOST_OS}
 	if [ "x$os" = "xlinux-uclibc" ]; then
@@ -82,7 +91,7 @@ do_configure () {
 		;;
 	esac
 	# inject machine-specific flags
-	sed -i -e "s|^\(\"$target\",\s*\"[^:]\+\):\([^:]\+\)|\1:${CFLAG}|g" Configure
+	sed -i -e "s|^\(\"$target\",\s*\"[^:]\+\):\([^:]\+\)|\1:$CFLAG|g" Configure
         useprefix=${prefix}
         if [ "x$useprefix" == "x" ]; then
                 useprefix=/
