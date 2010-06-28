@@ -79,8 +79,8 @@ SRCDATE = "20100609"
 ####################################################
 BRANCH="2.8"
 PV = "2.8git${SRCDATE}"
-# if you want 2.8.3 use
-SRCREV = "193c5aa6a5cc399e4dd150c998275366ea4842f5"
+# if you want 2.8.4 use
+SRCREV = "d567215630819576ddc322736d4370155efeae0f"
 ####################################################
 
 SRC_URI = "git://git.opendreambox.org/git/enigma2.git;protocol=git;branch=${BRANCH};tag=${SRCREV} \
