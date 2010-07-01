@@ -12,7 +12,13 @@ INC_PR = "r1"
 
 SRCREV = "160764"
 PV = "4.5"
-BINV = "${PV}.1"
+# BINV should be incremented after updating to a revision
+# after a minor gcc release (e.g. 4.5.1 or 4.5.2) has been made
+# the value will be minor-release+1 e.g. if minor release was
+# 4.5.1 then the value below will be 2 which will mean 4.5.2
+# which will be next minor release and so on.
+
+BINV = "${PV}.2"
 BRANCH = "gcc-4_5-branch"
 PR_append = "+svnr${SRCPV}"
 
@@ -45,4 +51,3 @@ EXTRA_OECONF_INTERMEDIATE = "--disable-libmudflap --disable-libgomp --disable-li
 EXTRA_OECONF_append_linux-uclibc = " --disable-decimal-float "
 EXTRA_OECONF_append_linux-uclibceabi = " --disable-decimal-float "
 EXTRA_OECONF_append_linux-uclibcspe = " --disable-decimal-float "
-EXTRA_OECONF_append_linux-uclibc = " ${@base_contains('TARGET_ARCH', 'powerpc', '--without-long-double-128', '',d)}"
