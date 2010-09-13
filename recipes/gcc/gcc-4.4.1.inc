@@ -8,7 +8,7 @@ LICENSE = "GPLv3"
 DEPENDS = "mpfr gmp"
 NATIVEDEPS = "mpfr-native gmp-native"
 
-INC_PR = "r10"
+INC_PR = "r11"
 
 FILESPATHPKG .= ":gcc-$PV"
 
