@@ -52,7 +52,7 @@ RRECOMMENDS_task-opendreambox-enigma2 = "\
   enigma2-plugin-systemplugins-positionersetup \
   enigma2-plugin-systemplugins-skinselector \
   ${@base_contains("MACHINE_FEATURES", "wifi", "task-opendreambox-wlan", "", d)} \
-  ${@base_contains("MACHINE_FEATURES", "modem", "task-opendreambox-modem", "", d)} \
+  ${@base_contains("MACHINE_FEATURES", "modem", "task-opendreambox-modem enigma2-plugin-extensions-trafficinfo", "", d)} \
 "
 
 RDEPENDS_task-opendreambox-enigma2_append_dm500hd = "\
