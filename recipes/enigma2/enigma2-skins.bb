@@ -3,15 +3,16 @@ MAINTAINER = "Felix Domke <tmbinc@elitedvb.net>"
 
 PACKAGES_DYNAMIC = "enigma2-skin-*"
 
-SRCDATE = "20100727"
+SRCDATE = "20101101"
 
-# if you want the 2.7 release, use
-#TAG = ";tag=enigma2-skins_rel27"
-#PV = "2.7cvs${SRCDATE}"
+# if you want the 3.0 release, use
+TAG = ";tag=enigma2-skins_rel30"
+#TAG = ""
+PV = "3.0cvs${SRCDATE}"
 
 # if you want experimental, use:
-TAG = ""
-PV = "experimental-cvs${SRCDATE}"
+#TAG = ""
+#PV = "experimental-cvs${SRCDATE}"
 
 SRC_URI = "cvs://anonymous@cvs.schwerkraft.elitedvb.net/cvsroot/enigma2-skins;module=enigma2-skins;method=pserver${TAG};date=${SRCDATE}"
 FILES_${PN} += " /usr/share/enigma2 /usr/share/fonts "
