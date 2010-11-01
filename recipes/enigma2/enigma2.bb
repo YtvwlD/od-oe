@@ -89,7 +89,7 @@ SRCREV = "699b940aa0a2e8e7ae21c1319d0c5d69d57279cc"
 ####################################################
 
 SRC_URI = "git://git.opendreambox.org/git/enigma2.git;protocol=git;branch=${BRANCH};tag=${SRCREV} \
-	${@base_version_less_or_equal('PREFERRED_VERSION_linux-${MACHINE}', '2.6.12.6', '',
+	${@base_version_less_or_equal('PREFERRED_VERSION_linux-${MACHINE}', '2.6.12.6', '', \
 		'file://new-hotplug.patch;patch=1;pnum=1', d)} \
 	file://enigma2.sh"
 
