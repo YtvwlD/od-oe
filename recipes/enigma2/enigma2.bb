@@ -85,7 +85,7 @@ SRCDATE = "20101101"
 BRANCH="3.0"
 PV = "3.0git${SRCDATE}"
 # if you want 3.0 use
-SRCREV = "699b940aa0a2e8e7ae21c1319d0c5d69d57279cc"
+SRCREV = "fe6cea40c2bd4dcfe99193cbd54c39785ffa428f"
 ####################################################
 
 SRC_URI = "git://git.opendreambox.org/git/enigma2.git;protocol=git;branch=${BRANCH};tag=${SRCREV} \
