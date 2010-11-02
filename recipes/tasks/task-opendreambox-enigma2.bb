@@ -48,6 +48,7 @@ RRECOMMENDS_task-opendreambox-enigma2 = "\
   enigma2-plugin-extensions-mediaplayer \
   enigma2-plugin-extensions-pictureplayer \
   enigma2-plugin-extensions-webinterface \
+  enigma2-plugin-systemplugins-crashlogautosubmit \
   enigma2-plugin-systemplugins-satfinder \
   enigma2-plugin-systemplugins-positionersetup \
   enigma2-plugin-systemplugins-skinselector \
