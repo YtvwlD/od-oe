@@ -44,7 +44,7 @@ export NFO = '${DEPLOY_DIR_IMAGE}/${IMAGE_NAME}.nfo'
 
 generate_nfo() {
     VER=`grep Version: "${IMAGE_ROOTFS}/usr/lib/ipkg/info/enigma2.control" | cut -b 10-12`
-    echo "Enigma2: Experimental ${VER}" > ${NFO}
+    echo "Enigma2: Release ${VER}" > ${NFO}
     echo "Machine: Dreambox ${MACHINE}" >> ${NFO}
     DATE=`date +%Y-%m-%d' '%H':'%M`
     echo "Date: ${DATE}" >> ${NFO}
