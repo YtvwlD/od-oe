@@ -61,7 +61,7 @@ DESCRIPTION_append_enigma2-plugin-systemplugins-networkwizard = "provides easy s
 PN = "enigma2"
 PR = "r0"
 
-SRCDATE = "20101105"
+SRCDATE = "20101111"
 #SRCDATE is NOT used by git to checkout a specific revision
 #but we need it to build a ipk package version
 #when you like to checkout a specific revision of e2 you need
@@ -86,7 +86,7 @@ SRCDATE = "20101105"
 BRANCH="3.0"
 PV = "3.0git${SRCDATE}"
 # if you want 3.0 use
-SRCREV = "580ba62cf0af58969453bfda788c1d81370b7353"
+SRCREV = "4b1e99839f61efa61eb194467f8ef1acd3a5e32c"
 ####################################################
 
 SRC_URI = "git://git.opendreambox.org/git/enigma2.git;protocol=git;branch=${BRANCH};tag=${SRCREV} \
