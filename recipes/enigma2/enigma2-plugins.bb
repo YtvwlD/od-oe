@@ -6,7 +6,7 @@ PACKAGES_DYNAMIC = "enigma2-plugin-*"
 SRCREV="2af613007415dd1d35af191d879331c744c1c8d4"
 SRCDATE="20101213"
 BRANCH="3.0"
-PV = "3.0-git${SRCDATE}"
+PV = "3.0git${SRCDATE}"
 
 PR = "r0"
 SRC_URI="git://schwerkraft.elitedvb.net/enigma2-plugins/enigma2-plugins.git;protocol=git;branch=${BRANCH};tag=${SRCREV}"

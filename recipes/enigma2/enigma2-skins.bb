@@ -6,7 +6,7 @@ PACKAGES_DYNAMIC = "enigma2-skin-*"
 SRCREV="bab18de12856222a13abe8ab3856cfe1ceb1572e"
 SRCDATE="20101206"
 BRANCH="3.0"
-PV = "3.0-git${SRCDATE}"
+PV = "3.0git${SRCDATE}"
 
 PR = "r0"
 SRC_URI="git://schwerkraft.elitedvb.net/enigma2-skins/enigma2-skins.git;protocol=git;branch=${BRANCH};tag=${SRCREV}"
