@@ -1,7 +1,7 @@
 DESCRIPTION = "OpenDreambox: Enigma2 Task for the OpenDreambox Distribution"
 SECTION = "opendreambox/base"
 LICENSE = "MIT"
-PR = "r8"
+PR = "r9"
 
 inherit task
 
@@ -55,6 +55,7 @@ RRECOMMENDS_task-opendreambox-enigma2 = "\
   enigma2-plugin-systemplugins-satfinder \
   enigma2-plugin-systemplugins-positionersetup \
   enigma2-plugin-systemplugins-skinselector \
+  enigma2-plugin-systemplugins-crashlogautosubmit \
   ${@base_contains("MACHINE_FEATURES", "wifi", "task-opendreambox-wlan", "", d)} \
   ${@base_contains("MACHINE_FEATURES", "modem", "task-opendreambox-modem", "", d)} \
   ${@base_contains("MACHINE_FEATURES", "dreambox-libpassthrough", "libpassthrough", "", d)} \
