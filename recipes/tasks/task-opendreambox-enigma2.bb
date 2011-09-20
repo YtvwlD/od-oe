@@ -1,7 +1,7 @@
 DESCRIPTION = "OpenDreambox: Enigma2 Task for the OpenDreambox Distribution"
 SECTION = "opendreambox/base"
 LICENSE = "MIT"
-PR = "r9"
+PR = "r10"
 
 inherit task
 
@@ -38,7 +38,7 @@ RDEPENDS_task-opendreambox-enigma2 = "\
   enigma2-meta \
   enigma2-plugins-meta \
   enigma2-skins-meta \
-  enigma2-drivers-meta \  
+  enigma2-drivers-meta \
 "
 
 RRECOMMENDS_task-opendreambox-enigma2 = "\
@@ -52,10 +52,12 @@ RRECOMMENDS_task-opendreambox-enigma2 = "\
   enigma2-plugin-extensions-graphmultiepg \
   enigma2-plugin-extensions-mediaplayer \
   enigma2-plugin-extensions-pictureplayer \
+  enigma2-plugin-extensions-webbouqueteditor \
   enigma2-plugin-extensions-webinterface \
   enigma2-plugin-systemplugins-satfinder \
   enigma2-plugin-systemplugins-positionersetup \
   enigma2-plugin-systemplugins-skinselector \
+  enigma2-plugin-systemplugins-crashlogautosubmit \
   ${@base_contains("MACHINE_FEATURES", "wifi", "task-opendreambox-wlan", "", d)} \
   ${@base_contains("MACHINE_FEATURES", "modem", "task-opendreambox-modem", "", d)} \
   ${@base_contains("MACHINE_FEATURES", "dreambox-libpassthrough", "libpassthrough", "", d)} \
