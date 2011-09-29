@@ -1,7 +1,7 @@
 DESCRIPTION = "Preloadable library to improve large file operations"
 SECTION = "base"
 
-SRCREV = "2beee1fa0a267c0c847bb52af297b9d04a824019"
+SRCREV = "f6cc8c3dce2f9ac00155ad38dc305996645c4005"
 
 inherit autotools opendreambox-git lib_package
 
