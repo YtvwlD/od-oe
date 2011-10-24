@@ -1,7 +1,7 @@
 DESCRIPTION = "OpenDreambox: Base Task for the OpenDreambox Distribution"
 SECTION = "opendreambox/base"
 LICENSE = "MIT"
-PR = "r7"
+PR = "r8"
 
 inherit task
 
@@ -21,13 +21,15 @@ OPENDREAMBOX_BASE_ESSENTIAL = "\
   e2fsprogs-e2fsck \
   e2fsprogs-mke2fs \
   fakelocale \
+  hdparm \
+  libpagecache \
   netkit-base \
   opkg-nogpg \
+  sdparm \
   timezones-alternative \
   tuxbox-common \
   util-linux-sfdisk \
   vsftpd \
-  hdparm \
 "
 
 OPENDREAMBOX_BASE_RECOMMENDS = "\

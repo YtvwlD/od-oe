@@ -4,10 +4,10 @@ MAINTAINER = "Felix Domke <tmbinc@elitedvb.net>"
 PACKAGES_DYNAMIC = "enigma2-plugin-*"
 
 # if you want experimental, use:
-SRCREV="87fd2f1120962f553ecb1a88bbee46ed821df975"
-SRCDATE="20110215"
-BRANCH="master"
-PV = "experimental-git${SRCDATE}"
+SRCREV="45b8e3fa35649dd7e61fa429301a6f71ed048390"
+SRCDATE="20110924"
+BRANCH="future"
+PV = "3.2git${SRCDATE}"
 
 PR = "r0"
 SRC_URI="git://schwerkraft.elitedvb.net/enigma2-plugins/enigma2-plugins.git;protocol=git;branch=${BRANCH};tag=${SRCREV}"
