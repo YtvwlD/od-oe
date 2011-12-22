@@ -49,6 +49,9 @@ PACKAGES =+ "${PN}-mountall"
 FILES_${PN}-mountall = "${sysconfdir}/default/mountall"
 RREPLACES_${PN}-mountall = "busybox-mountall"
 
+PACKAGES =+ "${PN}-blkid"
+FILES_${PN}-blkid = "${base_sbindir}/blkid ${sbindir}/blkid"
+
 RRECOMMENDS_${PN} = "util-linux-ng-fdisk util-linux-ng-cfdisk util-linux-ng-sfdisk util-linux-ng-mount util-linux-ng-readprofile "
 RDEPENDS_${PN} = "${PN}-mountall util-linux-ng-umount util-linux-ng-swaponoff util-linux-ng-losetup"
 
