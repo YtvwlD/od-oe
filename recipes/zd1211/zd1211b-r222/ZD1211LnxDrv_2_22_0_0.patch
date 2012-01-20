@@ -8,12 +8,13 @@ diff -Naur org/Makefile patched/Makefile
 -HOST=
 -CC=$(HOST)gcc
 -LD=$(HOST)ld
+-KERN_VER=$(shell uname -r | cut -b1-3;)
 +#HOST=
 +#CC=$(HOST)gcc
 +#LD=$(HOST)ld
 +VERSION := $(shell uname -r)
 +MODPATH := /lib/modules/$(VERSION)
- KERN_VER=$(shell uname -r | cut -b1-3;)
++KERN_VER=2.6
  KDIR := /lib/modules/$(shell uname -r)/build
  PWD := $(shell pwd)
 @@ -17,15 +19,17 @@
