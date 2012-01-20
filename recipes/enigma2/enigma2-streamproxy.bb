@@ -1,11 +1,12 @@
 DESCRIPTION = "streamproxy manages streaming data to a PC using enigma2"
 MAINTAINER = "Felix Domke <tmbinc@elitedvb.net>"
 
-SRCDATE = "20101014"
-PV = "1.0cvs${SRCDATE}"
+SRCDATE = "20111030"
+PV = "1.0git${SRCDATE}"
+SRCREV="b927ed8498a41a77e965abad099eb01dc5fef562"
 
-SRC_URI = "cvs://anonymous@cvs.schwerkraft.elitedvb.net/cvsroot/streamproxy;module=enigma2-streamproxy;method=pserver"
+SRC_URI = "git://schwerkraft.elitedvb.net/streamproxy/streamproxy.git;protocol=git;tag=${SRCREV}"
 
 inherit autotools
 
-S = "${WORKDIR}/enigma2-streamproxy"
+S = "${WORKDIR}/git"
