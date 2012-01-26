@@ -4,7 +4,7 @@ DEPENDS = "python-native db gdbm openssl readline sqlite3 tcl zlib\
 DEPENDS_sharprom = "python-native db readline zlib gdbm openssl"
 DEPENDS_opendreambox = "python-native db gdbm openssl readline sqlite3 zlib"
 # set to .0 on every increase of INC_PR
-PR = "${INC_PR}.2"
+PR = "${INC_PR}.3"
 
 SRC_URI = "\
   http://www.python.org/ftp/python/${PV}/Python-${PV}.tar.bz2 \
@@ -17,6 +17,8 @@ SRC_URI = "\
   file://06-ctypes-libffi-fix-configure.patch;patch=1 \
   file://ipv6-cross.patch;patch=1 \
   file://python-module-rpath-fix.patch;patch=1 \
+  file://ctypes-no-ldconfig.patch;patch=1 \
+  file://ctypes-error-handling-fix.patch;patch=1 \
   file://sitecustomize.py \
 "
 
