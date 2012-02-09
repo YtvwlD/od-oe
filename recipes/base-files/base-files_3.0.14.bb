@@ -1,7 +1,7 @@
 DESCRIPTION = "Miscellaneous files for the base system."
 SECTION = "base"
 PRIORITY = "required"
-PR = "r92"
+PR = "r93"
 LICENSE = "GPL"
 
 FSTAB_dm7025 = "${@base_contains('PREFERRED_VERSION_linux-dm7025', '2.6.12.6', 'fstab_old', 'fstab', d)}"
@@ -160,11 +160,13 @@ do_install_append_netbook-pro () {
 	mkdir -p ${D}/initrd
 }
 
+REMOVE_MEDIA_HDD = "${@base_contains('MACHINE', 'dm7025', '', 'rm -rf ${D}/media/hdd', d)}"
 do_install_append_opendreambox() {
 	rm -rf ${D}/mnt
 	rm -rf ${D}/hdd
-	ln -sf media/hdd ${D}/hdd
-	ln -sf media ${D}/mnt
+	ln -sf /media/hdd ${D}/hdd
+	ln -sf /media ${D}/mnt
+	${REMOVE_MEDIA_HDD}
 }
 
 PACKAGES = "${PN}-dbg ${PN}-doc ${PN}"
