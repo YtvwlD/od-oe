@@ -5,7 +5,7 @@ PRIORITY = "required"
 PROVIDES = "initscripts"
 RPROVIDES_${PN} = "initscripts"
 LICENSE = "GPL"
-PR = "r29"
+PR = "r30"
 PR_dm7025 = "r31"
 
 FILESPATHPKG = "initscripts-${PV}:initscripts:files"
