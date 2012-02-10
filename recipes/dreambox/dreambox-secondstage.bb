@@ -9,12 +9,13 @@ PV_dm7020 = "35"
 PV_dm600pvr = "66"
 PV_dm500plus = "66"
 PR = "r0"
+PR_dm7020hd = "r1"
 
 RDEPENDS_${PN} = "dreambox-bootlogo (>= 7.0)"
 
 SRC_URI = "http://sources.dreamboxupdate.com/download/7020/secondstage-${MACHINE}-${PV}.bin"
 
-WRITENFI = "writenfi-mipsel-2.6.18-r2"
+WRITENFI = "writenfi-mipsel-2.6.18-r3"
 
 SECONDSTAGE_UPDATE_SRC = "http://sources.dreamboxupdate.com/download/7020/secondstage-${MACHINE}-${PV}.nfi \
 	http://sources.dreamboxupdate.com/download/7020/${WRITENFI}"
