@@ -6,7 +6,7 @@ PACKAGES_DYNAMIC = "enigma2-skin-*"
 # if you want experimental, use:
 SRCREV="472e9d9257dbef16205b00b3dc748eeddc10e3aa"
 SRCDATE="20120104"
-BRANCH="master"
+BRANCH="3.2"
 PV = "3.2git${SRCDATE}"
 
 PR = "r0"
