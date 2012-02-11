@@ -59,7 +59,7 @@ RDEPENDS_enigma2-plugin-systemplugins-wirelesslan = "wpa-supplicant wireless-too
 DESCRIPTION_append_enigma2-plugin-systemplugins-networkwizard = "provides easy step by step network configuration"
 
 PN = "enigma2"
-PR = "r1"
+PR = "r2"
 
 SRCDATE = "20120210"
 #SRCDATE is NOT used by git to checkout a specific revision
@@ -75,7 +75,7 @@ PV = "3.2git${SRCDATE}"
 ####################################################
 
 SRC_URI = "http://dreamboxupdate.com/download/snapshots/enigma2_${PV}_${MACHINE}.tar.bz2 \
-	file://0001-fixed-typo.patch"
+	file://0001-fixed-typo.patch;patch=1"
 
 S = "${WORKDIR}/enigma2_${PV}_${MACHINE}"
 
