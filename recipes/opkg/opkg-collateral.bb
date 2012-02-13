@@ -1,7 +1,7 @@
 DESCRIPTION = "opkg configuration files"
 SECTION = "base"
 LICENSE = "MIT"
-PR = "r1"
+PR = "r2"
 
 SRC_URI = "file://opkg.conf.comments \
 	   file://lists \
