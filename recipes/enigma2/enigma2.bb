@@ -61,7 +61,7 @@ DESCRIPTION_append_enigma2-plugin-systemplugins-networkwizard = "provides easy s
 PN = "enigma2"
 PR = "r0"
 
-SRCDATE = "20111110"
+SRCDATE = "20120214"
 #SRCDATE is NOT used by git to checkout a specific revision
 #but we need it to build a ipk package version
 #when you like to checkout a specific revision of e2 you need
@@ -74,7 +74,8 @@ PV = "3.2git${SRCDATE}"
 #SRCREV = ""
 ####################################################
 
-SRC_URI = "http://dreamboxupdate.com/download/snapshots/enigma2_${PV}_${MACHINE}.tar.bz2"
+SRC_URI = "http://dreamboxupdate.com/download/snapshots/enigma2_${PV}_${MACHINE}.tar.bz2
+"
 
 S = "${WORKDIR}/enigma2_${PV}_${MACHINE}"
 

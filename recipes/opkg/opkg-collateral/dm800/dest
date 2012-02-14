@@ -1,4 +1,3 @@
 dest root /
 dest ram /media/ram/
-dest hdd /media/hdd/
 dest usb /media/usb/
