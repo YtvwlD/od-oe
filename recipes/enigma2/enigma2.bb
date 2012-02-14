@@ -74,8 +74,7 @@ PV = "3.2git${SRCDATE}"
 #SRCREV = ""
 ####################################################
 
-SRC_URI = "http://dreamboxupdate.com/download/snapshots/enigma2_${PV}_${MACHINE}.tar.bz2
-"
+SRC_URI = "http://dreamboxupdate.com/download/snapshots/enigma2_${PV}_${MACHINE}.tar.bz2"
 
 S = "${WORKDIR}/enigma2_${PV}_${MACHINE}"
 
