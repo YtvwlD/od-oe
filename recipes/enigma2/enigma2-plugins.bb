@@ -28,7 +28,7 @@ inherit autotools
 
 S = "${WORKDIR}/git"
 
-DEPENDS = "python-pyopenssl python-gdata streamripper python-mutagen python-daap python-flickrapi python-transmissionrpc"
+DEPENDS = "python-pyopenssl python-gdata streamripper python-mutagen python-daap python-flickrapi python-transmissionrpc python-pycrypto"
 DEPENDS += "enigma2"
 
 python populate_packages_prepend () {
