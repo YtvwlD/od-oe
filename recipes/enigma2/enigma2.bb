@@ -59,9 +59,9 @@ RDEPENDS_enigma2-plugin-systemplugins-wirelesslan = "wpa-supplicant wireless-too
 DESCRIPTION_append_enigma2-plugin-systemplugins-networkwizard = "provides easy step by step network configuration"
 
 PN = "enigma2"
-PR = "r1"
+PR = "r0"
 
-SRCDATE = "20120309"
+SRCDATE = "20120321"
 #SRCDATE is NOT used by git to checkout a specific revision
 #but we need it to build a ipk package version
 #when you like to checkout a specific revision of e2 you need
@@ -74,10 +74,7 @@ PV = "3.2git${SRCDATE}"
 #SRCREV = ""
 ####################################################
 
-SRC_URI = "http://dreamboxupdate.com/download/snapshots/enigma2_${PV}_${MACHINE}.tar.bz2 \
-	file://0001-Screens-RecordPaths.py-allow-selection-of-enigma2-co.patch;patch=1 \
-	file://0002-Components-Harddisk.py-reconfigure-old-linked-defaul.patch;patch=1 \
-"
+SRC_URI = "http://dreamboxupdate.com/download/snapshots/enigma2_${PV}_${MACHINE}.tar.bz2"
 
 S = "${WORKDIR}/enigma2_${PV}_${MACHINE}"
 
