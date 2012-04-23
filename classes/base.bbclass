@@ -1360,7 +1360,6 @@ EXPORT_FUNCTIONS do_setscene do_clean do_mrproper do_distclean do_fetch do_unpac
 
 MIRRORS[func] = "0"
 MIRRORS () {
-${DEBIAN_MIRROR}/main	http://snapshot.debian.net/archive/pool
 ${DEBIAN_MIRROR}	ftp://ftp.de.debian.org/debian/pool
 ${DEBIAN_MIRROR}	ftp://ftp.au.debian.org/debian/pool
 ${DEBIAN_MIRROR}	ftp://ftp.cl.debian.org/debian/pool
