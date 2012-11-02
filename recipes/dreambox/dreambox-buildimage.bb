@@ -1,3 +1,4 @@
 require dreambox-buildimage.inc
-inherit native
+
+inherit autotools
 
