@@ -2,9 +2,9 @@ require python.inc
 DEPENDS = "python-native db gdbm openssl readline sqlite3 tcl zlib\
            ${@base_contains('DISTRO_FEATURES', 'tk', 'tk', '', d)}"
 DEPENDS_sharprom = "python-native db readline zlib gdbm openssl"
-DEPENDS_opendreambox = "python-native db gdbm openssl readline sqlite3 zlib"
+DEPENDS_opendreambox = "python-native db gdbm openssl readline sqlite3 zlib bzip2"
 # set to .0 on every increase of INC_PR
-PR = "${INC_PR}.3"
+PR = "${INC_PR}.4"
 
 SRC_URI = "\
   http://www.python.org/ftp/python/${PV}/Python-${PV}.tar.bz2 \
