@@ -3,7 +3,7 @@ DEPENDS = "avahi-ui libglade libnotify"
 
 PV = "0.0+git${SRCDATE}"
 
-SRC_URI = "git://git.0pointer.de/repos/mango-lassi.git/;protocol=http"
+SRC_URI = "http://git.0pointer.de/mango-lassi.git"
 
 
 S = "${WORKDIR}/${PN}"
