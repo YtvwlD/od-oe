@@ -69,18 +69,18 @@ SRCDATE = "20100724"
 ####################################################
 
 # if you want experimental use
-####################################################
-BRANCH = "experimental"
-PV = "experimental-git${SRCDATE}"
-SRCREV = ""
-####################################################
+#####################################################
+#BRANCH = "experimental"
+#PV = "experimental-git${SRCDATE}"
+#SRCREV = ""
+#####################################################
 
 # if you want a 2.6-based release, use
 ####################################################
-#BRANCH="2.7"
-#PV = "2.7git${SRCDATE}"
+BRANCH="2.7"
+PV = "2.7git${SRCDATE}"
 # if you want 2.7.0 use
-#SRCREV = "aa64f107516da5aaff79d6d096f8014f65ea3283"
+SRCREV = "aa64f107516da5aaff79d6d096f8014f65ea3283"
 ####################################################
 
 SRC_URI = "git://git.opendreambox.org/git/enigma2.git;protocol=git;branch=${BRANCH};tag=${SRCREV} \
