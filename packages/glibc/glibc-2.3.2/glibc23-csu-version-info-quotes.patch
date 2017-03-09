@@ -7,16 +7,16 @@ diff -Naur glibc-2.3.2/csu/Makefile glibc-2.3.2/csu/Makefile.csu.custom
            if [ -z "$$os" ]; then \
              os=Linux; \
            fi; \
--           echo "\"Compiled on a $$os $$version system" \
--            "on `date +%Y-%m-%d`.\\n\"";; \
-+           printf '"Compiled on a %s %s system on %s.\\n"\n' \
-+            "$$os" "$$version" "`date +%Y-%m-%d`";; \
+-		  echo "\"Compiled on a $$os $$version system" \
+-			"on `date +%Y-%m-%d`.\\n\"";; \
++		  printf '"Compiled on a %s %s system on %s.\\n"\n' \
++			"$$os" "$$version" "`date +%Y-%m-%d`";; \
        *);; \
      esac; \
      files="$(all-Banner-files)";                \
      if test -n "$$files"; then                \
--       echo "\"Available extensions:\\n\"";            \
-+        printf '"Available extensions:\\n"\n';        \
+-	  echo "\"Available extensions:\\n\"";            \
++	  printf '"Available extensions:\\n"\n';        \
        sed -e '/^#/d' -e 's/^[[:space:]]*/    /'        \
            -e 's/\(^.*$$\)/\"\1\\n\"/' $$files;        \
      fi) > $@T

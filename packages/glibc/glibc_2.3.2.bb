@@ -113,6 +113,7 @@ SRC_URI = "ftp://ftp.gnu.org/gnu/glibc/glibc-${PV}.tar.gz \
 	   file://glibc232-gcc34-i386-fixup-attribute.patch;patch=1;pnum=1 \
 	   file://glibc232-gcc34-no-unit-at-a-time.patch;patch=1;pnum=1 \
 	   file://etc/ld.so.conf \
+	   file://glibc23-csu-version-info-quotes.patch;patch=1 \
  	   file://generate-supported.mk"
 
 S = "${WORKDIR}/glibc-${PV}"
