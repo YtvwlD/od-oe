@@ -1,22 +1,35 @@
-# taken from: http://dreambox.de/board/index.php?thread/2774-fehler-mit-ubuntu-6-10/
+># taken from: http://dreambox.de/board/index.php?thread/2774-fehler-mit-ubuntu-6-10/
 
-diff -Naur glibc-2.3.2/csu/Makefile glibc-2.3.2/csu/Makefile.csu.custom
---- glibc-2.3.2/csu/Makefile    2006-11-02 00:11:14.000000000 +0100
-+++ glibc-2.3.2/csu/Makefile.csu.custom    2006-11-02 00:35:53.000000000 +0100
-@@ -231,13 +231,13 @@
-           if [ -z "$$os" ]; then \
-             os=Linux; \
-           fi; \
--		  echo "\"Compiled on a $$os $$version system" \
--			"on `date +%Y-%m-%d`.\\n\"";; \
-+		  printf '"Compiled on a %s %s system on %s.\\n"\n' \
-+			"$$os" "$$version" "`date +%Y-%m-%d`";; \
-       *);; \
-     esac; \
-     files="$(all-Banner-files)";                \
-     if test -n "$$files"; then                \
--	  echo "\"Available extensions:\\n\"";            \
-+	  printf '"Available extensions:\\n"\n';        \
-       sed -e '/^#/d' -e 's/^[[:space:]]*/    /'        \
-           -e 's/\(^.*$$\)/\"\1\\n\"/' $$files;        \
-     fi) > $@T
+diff -crB glibc-2.3.2.orig/csu/Makefile glibc-2.3.2/csu/Makefile
+*** glibc-2.3.2.orig/csu/Makefile	Thu Mar  9 11:24:59 2017
+--- glibc-2.3.2/csu/Makefile    	Thu Mar  9 11:26:10 2017
+***************
+*** 231,243 ****
+  		   if [ -z "$$os" ]; then \
+  		     os=Linux; \
+  		   fi; \
+! 		   echo "\"Compiled on a $$os $$version system" \
+! 			"on `date +%Y-%m-%d`.\\n\"" ;; \
+  	   *) ;; \
+  	 esac; \
+  	 files="$(all-Banner-files)";				\
+  	 if test -n "$$files"; then				\
+! 	   echo "\"Available extensions:\\n\"";			\
+  	   sed -e '/^#/d' -e 's/^[[:space:]]*/	/'		\
+  	       -e 's/\(^.*$$\)/\"\1\\n\"/' $$files;		\
+  	 fi) > $@T
+--- 231,243 ----
+  		   if [ -z "$$os" ]; then \
+  		     os=Linux; \
+  		   fi; \
+! 		   printf '"Compiled on a %s %s system on %s.\\n"\n' \
+! 			"$$os" "$$version" "`date +%Y-%m-%d`";; \
+  	   *) ;; \
+  	 esac; \
+  	 files="$(all-Banner-files)";				\
+  	 if test -n "$$files"; then				\
+! 	   printf '"Available extensions:\\n"\n';		\
+  	   sed -e '/^#/d' -e 's/^[[:space:]]*/	/'		\
+  	       -e 's/\(^.*$$\)/\"\1\\n\"/' $$files;		\
+  	 fi) > $@T
+
