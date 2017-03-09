@@ -1,0 +1,86 @@
+#taken from https://sourceware.org/ml/libc-alpha/2003-07/msg00180.html
+
+diff -crB glibc-2.3.2.orig/sysdeps/powerpc/nofpu/sim-full.c glibc-2.3.2/sysdeps/powerpc/nofpu/sim-full.c 
+*** glibc-2.3.2.orig/sysdeps/powerpc/nofpu/sim-full.c   Thu Mar  9 12:35:03 2017
+--- glibc-2.3.2/sysdeps/powerpc/nofpu/sim-full.c        Thu Mar  9 12:35:53 2017
+***************
+*** 23,34 ****
+  #include "soft-supp.h"
+  
+  /* Global to store sticky exceptions.  */
+! int __sim_exceptions;
+  
+  /* By default, no exceptions should trap.  */
+  int __sim_disabled_exceptions = 0xffffffff;
+  
+! int __sim_round_mode;
+  
+  void
+  __simulate_exceptions (int x)
+--- 23,37 ----
+  #include "soft-supp.h"
+  
+  /* Global to store sticky exceptions.  */
+! int __sim_exceptions __attribute__ ((nocommon));
+! libc_hidden_data_def (__sim_exceptions);
+  
+  /* By default, no exceptions should trap.  */
+  int __sim_disabled_exceptions = 0xffffffff;
++ libc_hidden_data_def (__sim_disabled_exceptions);
+  
+! int __sim_round_mode __attribute__ ((nocommon));
+! libc_hidden_data_def (__sim_round_mode);
+  
+  void
+  __simulate_exceptions (int x)
+
+*** glibc-2.3.2.orig/sysdeps/powerpc/nofpu/soft-supp.h  Thu Mar  9 12:35:11 2017
+--- glibc-2.3.2/sysdeps/powerpc/nofpu/soft-supp.h       Thu Mar  9 12:36:13 2017
+***************
+*** 27,33 ****
+  } fenv_union_t;
+  
+  
+! extern int __sim_exceptions attribute_hidden;
+! extern int __sim_disabled_exceptions attribute_hidden;
+! extern int __sim_round_mode attribute_hidden;
+  extern void __simulate_exceptions (int x) attribute_hidden;
+--- 27,37 ----
+  } fenv_union_t;
+  
+  
+! extern int __sim_exceptions;
+! libc_hidden_proto (__sim_exceptions);
+! extern int __sim_disabled_exceptions;
+! libc_hidden_proto (__sim_disabled_exceptions);
+! extern int __sim_round_mode;
+! libc_hidden_proto (__sim_round_mode);
+! 
+  extern void __simulate_exceptions (int x) attribute_hidden;
+
+diff -crB glibc-2.3.2.orig/sysdeps/powerpc/soft-fp/sfp-machine.h  glibc-2.3.2/sysdeps/powerpc/soft-fp/sfp-machine.h 
+*** glibc-2.3.2.orig/sysdeps/powerpc/soft-fp/sfp-machine.h      Thu Mar  9 12:35:36 2017
+--- glibc-2.3.2/sysdeps/powerpc/soft-fp/sfp-machine.h   Thu Mar  9 12:36:27 2017
+***************
+*** 52,58 ****
+  #define FP_HANDLE_EXCEPTIONS  __simulate_exceptions (_fex)
+  #define FP_ROUNDMODE          __sim_round_mode
+  
+! extern int __sim_exceptions attribute_hidden;
+! extern int __sim_disabled_exceptions attribute_hidden;
+! extern int __sim_round_mode attribute_hidden;
+  extern void __simulate_exceptions (int x) attribute_hidden;
+--- 52,62 ----
+  #define FP_HANDLE_EXCEPTIONS  __simulate_exceptions (_fex)
+  #define FP_ROUNDMODE          __sim_round_mode
+  
+! extern int __sim_exceptions;
+! libc_hidden_proto (__sim_exceptions);
+! extern int __sim_disabled_exceptions;
+! libc_hidden_proto (__sim_disabled_exceptions);
+! extern int __sim_round_mode;
+! libc_hidden_proto (__sim_round_mode);
+! 
+  extern void __simulate_exceptions (int x) attribute_hidden;
+
+
