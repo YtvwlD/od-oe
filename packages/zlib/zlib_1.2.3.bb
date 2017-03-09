@@ -6,7 +6,7 @@ HOMEPAGE = "http://www.gzip.org/zlib/"
 LICENSE = "zlib"
 PR="r1"
 
-SRC_URI = "http://zlib.net/zlib-1.2.3.tar.bz2 \
+SRC_URI = "https://sourceforge.net/projects/libpng/files/zlib/1.2.3/zlib-1.2.3.tar.bz2/download \
 		file://visibility.patch;patch=1 \
 		file://autotools.patch;patch=1 "
 
