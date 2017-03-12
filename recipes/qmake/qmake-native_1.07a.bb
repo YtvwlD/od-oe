@@ -7,7 +7,7 @@ PR = "r5"
 
 QTEVER = "qt-embedded-free-3.3.5"
 
-SRC_URI = "ftp://ftp.trolltech.com/pub/qt/source/${QTEVER}.tar.bz2 \
+SRC_URI = "https://download.qt.io/archive/qt/3/${QTEVER}.tar.bz2 \
            file://linux-oe-qmake.conf"
 S = "${WORKDIR}/${QTEVER}"
 
