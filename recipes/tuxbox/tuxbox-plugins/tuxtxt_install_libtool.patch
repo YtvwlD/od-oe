@@ -1,6 +1,6 @@
 diff -crB tuxtxt.orig/Makefile.am tuxtxt/Makefile.am
-*** tuxtxt.orig/Makefile.am	2017-03-12 15:50:57.032044620 +0000
---- tuxtxt/Makefile.am		2017-03-12 15:51:09.584041698 +0000
+*** a/tuxtxt.orig/Makefile.am	2017-03-12 15:50:57.032044620 +0000
+--- b/tuxtxt/Makefile.am		2017-03-12 16:11:49.632035808 +0000
 ***************
 *** 32,37 ****
   	install -d $(DESTDIR)$(PLUGINDIR)
