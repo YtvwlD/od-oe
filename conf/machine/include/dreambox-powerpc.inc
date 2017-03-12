@@ -8,6 +8,8 @@ PREFERRED_VERSION_freetype = "2.0.9"
 PREFERRED_PROVIDER_task-opendreambox-dvbapi = "task-opendreambox-dvbapi2"
 PREFERRED_PROVIDER_task-opendreambox-ui = "task-opendreambox-enigma"
 
+ENABLE_BINARY_LOCALE_GENERATION = "0"
+
 TARGET_ARCH = "powerpc"
 TARGET_CPU = "405"
 
