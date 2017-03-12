@@ -17,7 +17,7 @@ INITSCRIPT_PARAMS_openmn = "start 85 1 2 3 4 5 . stop 85 0 6 1 ."
 INITSCRIPT_PARAMS_slugos = "start 42 S 0 6 ."
 
 SRC_URI = "\
-  http://www.mucross.com/downloads/tonga-linux/sources/GPL/netbase/netbase-4.21.tar.gz \
+  https://cloudfront.debian.net/debian-archive/debian/pool/main/n/netbase/netbase_4.21.tar.gz \
   file://options \
   file://init \
   file://hosts \
