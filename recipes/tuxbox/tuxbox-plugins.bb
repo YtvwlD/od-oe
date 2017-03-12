@@ -5,6 +5,7 @@ MAINTAINER = "Felix Domke <tmbinc@elitdvb.net>"
 SRC_URI = "cvs://anoncvs@cvs.tuxbox.org/cvs/tuxbox;module=apps/tuxbox/plugins;method=ext \
 	   file://disable_nonworking.diff;patch=1;pnum=1 \
 	   file://tuxtxt_include_fix.patch;patch=1;pnum=1 \
+	   file://tuxtxt_install_libtool.patch;patch=1 \
            file://game_names.diff;patch=1;pnum=1"
 
 RPROVIDES = "tuxbox-plugins"

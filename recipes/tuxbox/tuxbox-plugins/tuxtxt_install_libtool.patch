@@ -1,0 +1,11 @@
+diff -purN tuxtxt.orig/Makefile.am tuxtxt/Makefile.am
+--- tuxtxt.orig/Makefile.am	2017-03-12 15:32:38.572044064 +0000
++++ tuxtxt/Makefile.am		2017-03-12 15:32:21.084040794 +0000
+@@ -32,6 +32,6 @@ install-exec-local:
+ 	install -d $(DESTDIR)$(PLUGINDIR)
+ 	install -d $(DESTDIR)$(CONFIGDIR)
+ 	install -d $(DESTDIR)$(CONFIGDIR)/tuxtxt
+-	$(LIBTOOL) install tuxtxt.la $(DESTDIR)$(PLUGINDIR)
++	install tuxtxt.la $(DESTDIR)$(PLUGINDIR)
+ 	install -m 0644 $(srcdir)/tuxtxt.cfg $(DESTDIR)$(PLUGINDIR)
+ 	install -m 0644 $(srcdir)/tuxtxt.conf $(DESTDIR)$(CONFIGDIR)/tuxtxt
