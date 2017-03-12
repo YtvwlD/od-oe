@@ -9,6 +9,7 @@ PREFERRED_PROVIDER_task-opendreambox-dvbapi = "task-opendreambox-dvbapi2"
 PREFERRED_PROVIDER_task-opendreambox-ui = "task-opendreambox-enigma"
 PREFERRED_VERSION_smartmontools = "5.33"
 PREFERRED_VERSION_libsigc++-1.2 = "1.2.7"
+PREFERRED_VERSION_gnutls = "1.6.3"
 
 ENABLE_BINARY_LOCALE_GENERATION = "0"
 
