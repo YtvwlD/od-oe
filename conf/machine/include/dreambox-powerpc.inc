@@ -7,6 +7,7 @@ PREFERRED_VERSION_gdb-cross = "6.5"
 PREFERRED_VERSION_freetype = "2.0.9"
 PREFERRED_PROVIDER_task-opendreambox-dvbapi = "task-opendreambox-dvbapi2"
 PREFERRED_PROVIDER_task-opendreambox-ui = "task-opendreambox-enigma"
+PREFERRED_VERSION_smartmontools = "5.33"
 
 ENABLE_BINARY_LOCALE_GENERATION = "0"
 
