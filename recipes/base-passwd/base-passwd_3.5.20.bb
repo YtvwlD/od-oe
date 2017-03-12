@@ -4,7 +4,7 @@ LICENSE = "GPL"
 PR = "r1"
 
 SRC_URI = "\
-  ${DEBIAN_MIRROR}/main/b/base-passwd/base-passwd_${PV}.tar.gz \
+  http://ftp.acc.umu.se/mirror/cdimage/snapshot/Debian/pool/main/b/base-passwd/base-passwd_3.5.20.tar.gz \
   file://nobash.patch;patch=1 \
   file://root-home.patch;patch=1 \
   file://mysql.patch;patch=1 \
