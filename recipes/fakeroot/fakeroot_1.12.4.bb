@@ -4,7 +4,7 @@ SECTION = "base"
 LICENSE = "GPL"
 
 SRC_URI = "\
-  ${DEBIAN_MIRROR}/main/f/fakeroot/fakeroot_${PV}.tar.gz \
+  http://pkgs.fedoraproject.org/repo/pkgs/fakeroot/fakeroot_1.12.4.tar.gz/aaefede2405a40c87438e7e833d69b70/fakeroot_1.12.4.tar.gz \
   file://configure-libtool.patch;patch=1 \
 "
 	    
