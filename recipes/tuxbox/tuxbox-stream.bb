@@ -9,8 +9,8 @@ SRC_URI = "file://tuxbox-stream-20170312.tar.bz2 \
            file://udpstreampes_build_fix.diff;patch=1;pnum=1 \
 	   file://add_configfiles.diff;patch=1;pnum=1"
 
-SRCDATE = "20050802"
-S = "${WORKDIR}/stream"
+SRCDATE = "20170312"
+S = "${WORKDIR}/tuxbox-stream"
 PV = "1.0+${SRCDATE}"
 PR = "r2"
 
