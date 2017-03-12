@@ -3,7 +3,7 @@ RDEPENDS = "libtuxbox-mpegtools0"
 DESCRIPTION = "tuxbox net streaming tools"
 MAINTAINER = "Felix Domke <tmbinc@elitdvb.net>"
 
-SRC_URI = "cvs://anoncvs@cvs.tuxbox.org/cvs/tuxbox;module=apps/dvb/tools/stream;method=ext \
+SRC_URI = "file://tuxbox-stream-20170312.tar.bz2 \
            file://acinclude.m4 \
            file://enable_transform.diff;patch=1;pnum=1 \
            file://udpstreampes_build_fix.diff;patch=1;pnum=1 \
