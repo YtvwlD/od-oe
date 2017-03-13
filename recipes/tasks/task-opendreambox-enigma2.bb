@@ -34,7 +34,6 @@ RDEPENDS_task-opendreambox-enigma2 = "\
   enigma2-plugin-systemplugins-softwaremanager \
   enigma2-plugin-systemplugins-videotune \
   enigma2-streamproxy \
-  tuxbox-tuxtxt-32bpp \
   enigma2-meta \
   enigma2-plugins-meta \
   enigma2-skins-meta \
