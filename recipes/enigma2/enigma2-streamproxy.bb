@@ -5,7 +5,7 @@ SRCDATE = "20101014"
 PV = "1.0cvs${SRCDATE}"
 
 SRC_URI = "cvs://anonymous@cvs.schwerkraft.elitedvb.net/cvsroot/streamproxy;module=enigma2-streamproxy;method=pserver \
-	  file://streamproxy-dvb.patch;patch=1"
+	  file://enigma2-streamproxy/dvb-api.patch;patch=1"
 
 inherit autotools
 
