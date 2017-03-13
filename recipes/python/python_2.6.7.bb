@@ -144,3 +144,5 @@ RDEPENDS_python-misc += "python-shell"
 # catch manpage
 PACKAGES += "python-man"
 FILES_python-man = "${datadir}/man"
+
+EXTRA_OECONF += "ac_cv_file__dev_ptmx=yes ac_cv_file__dev_ptc=no"
