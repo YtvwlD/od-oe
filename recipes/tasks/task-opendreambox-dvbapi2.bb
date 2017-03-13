@@ -18,6 +18,5 @@ DESCRIPTION_${PN} = "OpenDreambox: DVB API v2 Dependencies"
 RDEPENDS_${PN} = "\
   dvbsnoop \
   dreambox-dvb-tools \
-  tuxbox-stream \
 "
 
