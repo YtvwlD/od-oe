@@ -44,7 +44,7 @@ EXTRA_OECONF='--disable-cups \
               samba_cv_struct_timespec=yes \
               libreplace_cv_HAVE_MMAP=${SAMBAMMAP}'
 
-PACKAGES =+ "libsmbclient libsmbclient-dev cifs cifs-doc smbfs smbfs-doc"
+PACKAGES =+ "smbfs smbfs-doc" #libsmbclient, libsmbclient-dev, cifs and cifs-doc are already in samba-basic.inc.
 PACKAGES =+ "${@base_conditional('DISTRO', 'opendreambox', ' sambaserver libpopt libtalloc libtdb', '', d)}"
 FILES_smbfs = "${bindir}/smbmount ${bindir}/smbumount ${bindir}/smbmnt ${base_sbindir}/mount.smbfs ${base_sbindir}/mount.smb"
 FILES_smbfs-doc = "${mandir}/man8/smbmount.8 ${mandir}/man8/smbumount.8 ${mandir}/man8/smbmnt.8"
