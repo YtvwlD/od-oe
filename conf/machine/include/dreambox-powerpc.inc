@@ -8,6 +8,7 @@ PREFERRED_PROVIDER_task-opendreambox-ui = "task-opendreambox-enigma2"
 PREFERRED_VERSION_smartmontools = "5.33"
 PREFERRED_VERSION_libsigc++-1.2 = "1.2.7"
 PREFERRED_VERSION_gnutls = "1.6.3"
+PREFERRED_VERSION_libsoup-2.4 = "2.4.1"
 
 ENABLE_BINARY_LOCALE_GENERATION = "0"
 
