@@ -26,7 +26,6 @@ SRC_URI = "${GNU_MIRROR}/gcc/gcc-${PV}/gcc-${PV}.tar.bz2;name=gcc444tarbz2 \
 	file://gcc-pr41175.patch \
 	file://gcc-armv4-pass-fix-v4bx-to-ld.patch \
 	file://gcc-add-t-slibgcc-libgcc.patch \
-	file://gcc-4.3.3-fix-EXTRA_BUILD.patch \
 	file://Makefile.in.patch \
 	"
 SRC_URI[gcc444tarbz2.md5sum] = "7ff5ce9e5f0b088ab48720bbd7203530"

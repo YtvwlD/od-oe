@@ -61,7 +61,6 @@ SRC_URI = "${GNU_MIRROR}/gcc/gcc-${PV}/gcc-${PV}.tar.bz2;name=archive \
 	file://gcc-flags-for-build.patch \
 	file://gcc-pr36218.patch \
 	file://gcc-4.3.3-SYSROOT_CFLAGS_FOR_TARGET.patch \
-	file://gcc-4.3.3-fix-EXTRA_BUILD.patch \
         file://arm-gcc-objective.patch \
 	file://Makefile.in.patch \
 "
