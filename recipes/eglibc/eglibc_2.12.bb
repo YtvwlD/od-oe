@@ -11,7 +11,6 @@ EGLIBC_BRANCH="eglibc-2_12"
 SRC_URI = "svn://svn.eglibc.org/branches;module=${EGLIBC_BRANCH};proto=svn \
            file://eglibc-svn-arm-lowlevellock-include-tls.patch;patch=1 \
            file://IO-acquire-lock-fix.patch;patch=1 \
-           file://shorten-build-commands.patch;patch=1 \
            file://etc/ld.so.conf \
            file://generate-supported.mk"
 S = "${WORKDIR}/${EGLIBC_BRANCH}/libc"
